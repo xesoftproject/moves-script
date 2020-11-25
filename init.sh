@@ -4,7 +4,7 @@
 
 sudo apt update
 sudo apt upgrade
-sudo apt install python3-venv stockfish
+sudo apt install python3-venv stockfish python-is-python3
 python3 -mvenv venv
 . venv/bin/activate
 pip install --upgrade pip pkg-resources setuptools wheel
