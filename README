@@ -1,0 +1,25 @@
+Semplici script per il setup, deploy e aggiornamento di moves su ec2.
+
+* init.sh
+da chiamare una volta sola, al momento della creazione della macchina ec2.
+ha il compito di installare le dipendenze necessarie, "tirare" i sorgenti,
+aggiornarli etc...
+
+* update.sh
+fa "il deploy" (si limita ad aggiornare i sorgenti e reinstallare il pacchetto
+nel virtualenv).
+fa anche stop e re-start degli applicativi
+*VUOI USARE QUESTO QUANDO CI SONO AGGIORNAMENTI*
+
+* start.sh
+fa partire gli applicativi
+
+* stop.sh
+ferma gli applicativi
+
+nota: ora su aws c'è
+https://eu-west-1.console.aws.amazon.com/ec2/v2/home?region=eu-west-1#InstanceDetails:instanceId=i-072c8a6b214239782
+se si vuole aggiornare l'idea è
+* ci si collega in ssh
+* si chiama ./moves-script/update.sh
+fatto
