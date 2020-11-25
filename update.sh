@@ -4,8 +4,9 @@
 
 . "$(dirname "${0}")/stop.sh"
 
+pushd moves; git pull; popd
+
 . venv/bin/activate
-git pull
 pip install --upgrade ./moves
 deactivate
 
