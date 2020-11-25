@@ -1,4 +1,4 @@
-ps #!/bin/bash
+#!/bin/bash
 
 # should be called to stop the applications
 
