@@ -39,3 +39,6 @@ sudo certbot certonly --standalone
 #    Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
 #    Donating to EFF:                    https://eff.org/donate-le
 
+sudo find /etc/letsencrypt -type d | sudo xargs chmod a+rx
+sudo a+r /etc/letsencrypt/live/www.xesoft.ml/cert.pem
+sudo a+r /etc/letsencrypt/live/www.xesoft.ml/privkey.pem
