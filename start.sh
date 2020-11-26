@@ -3,8 +3,8 @@
 # should be called to start the applications
 
 . venv/bin/activate
-sudo moves-web &
+sudo venv/bin/moves-web &
 echo $! > MOVES_WEB_PID
-sudo moves-rest &
+sudo venv/bin/moves-rest &
 echo $! > MOVES_REST_PID
 deactivate
