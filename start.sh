@@ -14,3 +14,8 @@ sudo venv/bin/moves-chat &
 echo $! > MOVES_CHAT_PID
 
 deactivate
+
+#CHAT
+CONFIG_URL=s3:xesoft/config.yml sudo node _root/app/app.js &
+echo $! > CHAT_PID
+

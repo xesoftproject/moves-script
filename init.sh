@@ -42,3 +42,7 @@ sudo certbot certonly --standalone
 sudo find /etc/letsencrypt -type d | sudo xargs chmod a+rx
 sudo a+r /etc/letsencrypt/live/www.xesoft.ml/cert.pem
 sudo a+r /etc/letsencrypt/live/www.xesoft.ml/privkey.pem
+
+git clone https://github.com/xesoftproject/chat.git
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt-get install -y nodejs

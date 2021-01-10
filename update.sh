@@ -5,9 +5,12 @@
 . "$(dirname "${0}")/stop.sh"
 
 pushd moves; git pull; popd
+pushd chat; git pull; popd
 
 . venv/bin/activate
 pip install --upgrade ./moves
 deactivate
+
+pushd chat; npm install; popd
 
 . "$(dirname "${0}")/start.sh"
