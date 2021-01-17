@@ -4,9 +4,8 @@
 
 . "$(dirname "${0}")/stop.sh"
 
-pushd moves-script; git pull; popd
 pushd moves; git pull; popd
-pushd chat; git pull --force; popd
+pushd chat; git pull; popd
 
 . venv/bin/activate
 pip install --upgrade ./moves
