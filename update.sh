@@ -6,7 +6,7 @@
 
 pushd moves-script; git pull; popd
 pushd moves; git pull; popd
-pushd chat; git pull; popd
+pushd chat; git pull --force; popd
 
 . venv/bin/activate
 pip install --upgrade ./moves
