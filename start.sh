@@ -19,7 +19,7 @@ deactivate
 #CONFIG_URL=s3:xesoft/config.yml sudo node chat/_root/app/app.js &
 
 #TEMPORARY
-CONFIG_URL=config.yml node _root/app/app.js
+cd chat; CONFIG_URL=config.yml node _root/app/app.js
 
 echo $! > CHAT_PID
 
