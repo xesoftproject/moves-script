@@ -5,4 +5,5 @@
 . "$(dirname "${0}")/stop.sh"
 
 pushd moves-script; git pull; popd
+
 . "$(dirname "${0}")/update.sh"
