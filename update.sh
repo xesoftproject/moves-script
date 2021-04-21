@@ -11,6 +11,6 @@ pushd chat; git pull; popd
 pip install --upgrade ./moves
 deactivate
 
-pushd chat/_root/app; npm install; npm run-script build; popd
+pushd chat; npm install; npm run-script build; popd
 
 . "$(dirname "${0}")/start.sh"
